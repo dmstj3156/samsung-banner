@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMSUNG GALAXY</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(192, 192, 192);
+            
+        }
+        .banner1{
+            position: relative;
+            width: 600px;
+            height: 210px;
+            background-color: blanchedalmond;
+            display: block;
+            background-image: url(./images/flip.png),
+                              url(./images/galaxy\ bg.gif)  ;
+            background-repeat: no-repeat;
+            background-size: 276px 226px, cover;
+            background-position: 10px -10px, right;
+            color: white;
+            text-decoration: none;
+            margin: 0 auto;
+            overflow: hidden;
+            box-shadow: 4px 4px 10px rgba(0,0,0);
+            margin-right: -200px;
+        }
+
+        .logo{
+            background-image: url(./images/logo.png);
+            background-size: 250px 100px;
+            width: 366px;
+            height: 280px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 60px;
+            right: -100px;
+            animation-name: logo;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+
+        }
+        @keyframes logo{
+            0%{right: -800px;}
+            9%{right: -93px;}
+            10%{right: -100px;}
+            
+       
+            
+           
+            100%{}
+
+        }
+        .logo > p{
+            position: absolute;
+            top: -50px;
+            left: 10px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px white;
+        }
+        .banner1 .url{
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
+            text-shadow: 1px 1px 1px white;
+        }
+/*banner 세로*/
+        .banner{
+            position: relative;
+            width: 210px;
+            height: 600px;
+            background-color: blanchedalmond;
+            display: block;
+            background-image: url(./images/bespoke.png),
+                              url(./images/bg2.gif)  ;
+            background-repeat: no-repeat;
+            background-size: 350px 350px, cover;
+            background-position: -67px 220px, right;
+            color: white;
+            text-decoration: none;
+            margin: 0 auto;
+            overflow: hidden;
+            
+            box-shadow: 4px 4px 10px rgba(0,0,0);
+            
+        }
+        .logo2{
+            background-image: url(./images/slogo.png);
+            background-size: 200px 100px;
+            width: 366px;
+            height: 280px;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 100px;
+            left: 6px;
+            animation-name: logo2;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+
+        }
+        @keyframes logo2{
+            0%{top: -700px;}
+            10%{top: 100px;}
+            11%{top: 110px;}
+            12%{top: 100px;}
+             100%{}
+
+        }
+        .logo2 > p{
+            position: absolute;
+            top: -70px;
+            left: 10px;
+            
+            text-shadow: 1px 1px 2px white;
+        }
+        .logo2 > .bespoke{
+            position: absolute;
+            top: -45px;
+            left: 10px;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px white;
+            font-size: 20px;
+        }
+        .banner .url2{
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
+            text-shadow: 1px 1px 1px white;
+            font-size: 11px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <a href="https://www.samsung.com/sec/smartphones/galaxy-z/" class="banner1">
+        <div class="logo">
+            <p>디자인의 혁신</p>
+        </div>
+        <strong class="url">www.samsung.com/galaxy-z</strong>
+
+    </a>
+
+    <a href="https://www.samsung.com/sec/refrigerators/package-rf85a9103apmw-d2c/RF85A9103APMW/" class="banner">
+        <div class="logo2">
+            <p>가전을 나답게</p>
+            <p class="bespoke">BESPOKE</p>
+        </div>
+        <strong class="url2">www.samsung.com/bespoke</strong>
+
+    </a>
+</body>
+</html>
